@@ -82,6 +82,10 @@ function Clone(folder, url, branch) {
 }
 
 function RebuildProject() {
+  log('Deleting old images');
+
+  shell.exec('docker rmi -f $(docker images -a -q)');
+
   log('Start rebuilding');
   shell.cd('../');
 

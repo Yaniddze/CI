@@ -59,7 +59,7 @@ function CheckFrontend(folder, url, branch) {
     shell.cd('../');
 
     shell.mv(folder + '/build/index.html', config.frontend.indexHTMLFolder);
-    shell.mv(folder + '/build', config.frontend.buildFolder);
+    shell.cp(folder + '/build/.', config.frontend.buildFolder);
 
     RebuildProject();
   }

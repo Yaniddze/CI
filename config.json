@@ -2,11 +2,9 @@
   "frontend": {
     "repoUrl": "https://@username:@pass@github.com/ActiveDbSoft/immunify-client",
 
-    "branchToPull": "dev",
+    "branchToPull": "ci",
 
-    "buildFolder": "./feBuild",
-    "indexHTMLFolder": "./feBuild/index"
-  },
-  "adminRepoUrl": "https://github.com/ActiveDbSoft/immunify-radmin",
-  "backendRepoUrl": "https://github.com/ActiveDbSoft/immunify-backend"
+    "buildFolder": "../WebApp/wwwroot/app",
+    "indexHTMLFolder": "../WebApp/Frontend/client"
+  }
 }

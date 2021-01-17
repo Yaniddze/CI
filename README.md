@@ -2,6 +2,15 @@
 
 CI script for github frontend repo. Using long pooling for updates check.
 
+<h2> :fire: About :fire: </h2>
+
+<p>
+  Application entrypoint - start function. First lines create all folders from config (if it not exist). <br>
+  Main programm is endless lifecycle. It call one function - CheckFrontend for checking frontend repo for any update. Then it sleep 10 sec. <br>
+  CheckFrontend function look inside frontend folder and if there is no any files script will clone repo and build it. <br>
+  If fe folder contains something script will pull repository. If std out not include 'Already up to date' it is succedded pull and project will rebuild. <br>
+<p>
+
 <h2> :memo: Configuration :memo: </h2>
 <p>
   You can configure this script from config.json and .env file 
